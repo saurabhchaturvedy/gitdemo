@@ -4,7 +4,7 @@ public class Main {
 
 	public String addData() {
 
-		return "App is initializing";
+		return Constants.APP_NAME + " is initializing";
 	}
 
 	public static void main(String[] args) {
