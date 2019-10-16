@@ -8,7 +8,7 @@ public class Main {
 	}
 	
 	public String demoGitPull() {
-
+                System.out.println("app is OK !");
 		return "added to demonstrate the Git Pull";
 	}
 
