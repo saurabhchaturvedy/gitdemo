@@ -8,8 +8,11 @@ public class Main {
 	}
 	
 	public String demoGitPull() {
+<<<<<<< HEAD
                 System.out.println("app is OK !");
+=======
                 String str ="hello";
+>>>>>>> cc303e5e05d4e1beeb3f7106ab27cc2ba82d9304
 		return "added to demonstrate the Git Pull";
 	}
 
