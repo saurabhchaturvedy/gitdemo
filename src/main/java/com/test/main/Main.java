@@ -8,7 +8,7 @@ public class Main {
 	}
 	
 	public String demoGitPull() {
-
+                String str ="hello";
 		return "added to demonstrate the Git Pull";
 	}
 
