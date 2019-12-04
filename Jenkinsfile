@@ -6,6 +6,7 @@ git 'https://github.com/saurabhchaturvedy/gitdemo'
 
 stage('Compile-package')
 {
-sh 'mvn package'
+def mvnHome = tool name: 'maven-app', type: 'maven'
+  sh "${mvnHome}/bin/mvn package"
 }
 }
