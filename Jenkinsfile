@@ -3,7 +3,7 @@ node{
 stage('Checkout')
 {
   echo 'Pulling changes from branch ${params.branch}...'
-  git url 'https://github.com/saurabhchaturvedy/gitdemo', branch "${params.branch}"
+  git url: 'https://github.com/saurabhchaturvedy/gitdemo', branch: "${params.branch}"
 }
 
 stage('Compile-package')
