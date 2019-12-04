@@ -1,5 +1,4 @@
-properties([parameters([choice(choices: ['master', 'feature1', 'feature2'], description: '', name: 'branch')])])
-properties([parameters([string(defaultValue: 'Just For Fun', description: '', name: 'Reason For  Build', trim: false)])])
+properties([parameters([choice(choices: ['master', 'feature1', 'feature2'], description: '', name: 'branch')],[string(defaultValue: 'Just For Fun', description: '', name: 'Reason For  Build', trim: false)])])
 node{
 stage('Checkout')
 {
