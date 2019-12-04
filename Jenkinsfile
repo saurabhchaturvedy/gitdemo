@@ -2,8 +2,8 @@ properties([parameters([choice(choices: ['master', 'feature1', 'feature2'], desc
 node{
 stage('Checkout')
 {
-  echo 'Starting to checkout code from repository...'
-git 'https://github.com/saurabhchaturvedy/gitdemo'
+  echo 'Pulling changes from branch ${params.branch}...'
+  git url 'https://github.com/saurabhchaturvedy/gitdemo', branch "${params.branch}"
 }
 
 stage('Compile-package')
