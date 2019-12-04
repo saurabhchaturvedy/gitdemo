@@ -1,6 +1,7 @@
 node{
 stage('Checkout')
 {
+  echo 'Starting to checkout code from repository...'
 git 'https://github.com/saurabhchaturvedy/gitdemo'
 }
 
