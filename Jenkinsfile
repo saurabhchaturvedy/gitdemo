@@ -1,3 +1,4 @@
+properties([parameters([choice(choices: ['master', 'feature1', 'feature2'], description: '', name: 'branch')])])
 node{
 stage('Checkout')
 {
